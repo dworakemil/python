@@ -1,0 +1,2 @@
+market.x1 + market_size_x * 0.28456375838926173,
+market.y1 + market_size_y * 0.8966789667896679
