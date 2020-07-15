@@ -5,7 +5,7 @@ width = height = 1000
 
 triangle_side = width
 triangle_height = (triangle_side * math.sqrt(3))/ 2
-iterations = 5
+iterations = 8
 
 pygame.init()
 
@@ -42,11 +42,18 @@ def frac( order, a, b, c ):
         
         pass
 
-frac( 8, (0,triangle_height), (triangle_side/2,0), (triangle_side, triangle_height) )
+frac( iterations, (0,triangle_height), (triangle_side/2,0), (triangle_side, triangle_height) )
 
 
 pygame.display.flip()
 
+
+
+
+while not finished:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            finished = True
     
 
 
